@@ -1,0 +1,10 @@
+version: '3'
+services:
+  sample:
+    command: /bin/bash
+    tty: true
+    build:
+      context: ./dockerfiles
+      dockerfile: Sample.Dockerfile
+    volumes:
+      - ./src:/root/src

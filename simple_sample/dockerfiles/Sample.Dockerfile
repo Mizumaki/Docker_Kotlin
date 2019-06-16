@@ -11,5 +11,4 @@ RUN apt-get update \
 RUN curl -s https://get.sdkman.io | bash
 RUN /bin/bash -l -c "source /root/.sdkman/bin/sdkman-init.sh;sdk install java;sdk install kotlin;sdk install gradle"
 WORKDIR /root
-COPY src /root
 CMD ["true"]
