@@ -1,0 +1,12 @@
+version: '3'
+services:
+  demo:
+    command: /bin/bash
+    tty: true
+    build:
+      context: ./
+      dockerfile: Demo.Dockerfile
+    volumes:
+      - ./ktor-demo:/root/ktor-demo
+    ports:
+      - "8080:8080"
